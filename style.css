@@ -1,0 +1,207 @@
+
+nav.flex-container-center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.link {
+    flex-shrink: 2;
+}
+
+a{
+
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+
+
+figure.photo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+div.sep{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div.links{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+
+}
+p.top-border{
+
+    border-style: solid none none none;
+    border-top-color: lightskyblue;
+
+}
+
+p.bottom-border{
+
+    border-style: none none solid none;
+    border-bottom-color: lightgray;
+    border-width: thin;
+}
+
+div.column{
+
+    display: flex;
+    flex-direction: column;
+}
+
+p.middle-divider{
+ 
+    display: flex;
+    border-style: none none none solid;
+    border-left-color: rgb(199, 199, 199);
+    border-width: thin;
+}
+
+.small{
+
+    flex-grow: 0.4;
+
+}
+.really-small{
+    flex-grow: 0.1;
+}
+
+.big{
+
+    width: 825px;
+
+}
+
+div.content{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border-style: none none solid none;
+    border-color: gray;
+
+}
+
+.textf{
+    font-family: 'Helvetica', sans-serif;
+}
+
+.notbold{
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.large{
+
+    width: 450px;
+    height: 30px;
+}
+
+.grey-text{
+
+    color: lightgray;
+    
+}
+
+.color{
+
+    color: rgb(65, 176, 245);
+}
+h3{
+    width: 300px
+}
+
+ul {
+    list-style: circle;
+    margin: 10px;
+    padding: 10px;
+  }
+
+li {
+    margin: 15px 0;
+  }
+
+  .smaller-text{
+
+    font-size: 0.8em;
+  }
+
+.title-center{
+
+    width: 200px;
+}
+
+  @media only screen and (max-width: 1200px) {
+
+    nav.flex-container-center{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 50px;
+    
+    }
+
+    div.sep{
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 20px
+
+    }
+
+    .middle-divider{
+        
+        width: 400px;
+        border-style: solid none solid none;
+        border-top-color: rgb(199, 199, 199);
+        border-left-color: rgb(199, 199, 199);
+        border-width: thin;
+    }
+
+    .big{
+
+        flex-grow: 0.8;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title-center{
+
+        width: 200px;
+        text-align: center;
+    }
+    .para-center{
+
+        text-align: center;
+    }
+
+  }
